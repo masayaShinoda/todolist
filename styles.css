@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, #375d81, #183152);
+  color: #fdfdfd;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button,
+.todo-button,
+.check-button,
+.delete-button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: 0;
+  background: none;
+}
+
+form button,
+.todo-button,
+.check-button,
+.delete-button {
+  color: #183152;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form input,
+.todo-button {
+  background: #fcfcfc;
+}
+
+form button:hover,
+.todo-button:hover,
+.check-button:hover,
+.delete-button:hover {
+  color: #0038d3;
+}
+
+.todo-container {
+  /*border: 1px solid red; /* debug */
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.todo-list {
+  /*border: 1px solid green; /* debug */
+  width: 50%;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5vmin;
+  /*padding: 0.5em 1.1em;*/
+  background: #fdfdfd;
+  border: 2px solid #dbdbdb;
+  /*border: 1px solid blue; /* debug */
+}
+.todo li {
+  color: #333333;
+  list-style-type: none;
+}
+
+/* li checked */
+.checked {
+  text-decoration: line-through;
+  text-decoration-color: #333333;
+  text-decoration-thickness: 2px;
+}
